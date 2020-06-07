@@ -26,7 +26,15 @@ const NumberGrid = () => {
   const checkNumberisActive = (number, activeNumbers) => activeNumbers.includes(number);
 
   const renderGridItems = useMemo(() => {
-    return (numberArray.map(number => <GridItem key={number} value={number} setMultiplesActive={setMultiplesActive} active={checkNumberisActive(number, activeNumberArray)}/>))
+    return (numberArray.map(number =>
+        <GridItem
+            key={number}
+            value={number}
+            setMultiplesActive={setMultiplesActive}
+            active={checkNumberisActive(number, activeNumberArray)}
+        />
+        )
+    )
   }, [numberArray,activeNumberArray]);
 
 

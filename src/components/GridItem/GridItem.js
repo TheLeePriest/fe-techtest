@@ -5,7 +5,14 @@ const GridItem = ({value, active, setMultiplesActive}) => {
   const handleClick = () => setMultiplesActive(value);
 
   return (
-      <button className={`grid-item ${active ? 'active' : 'inactive'}`} onClick={handleClick} type="button" data-testid={`item-${value}`}>{value}</button>
+      <button
+          className={`grid-item ${active ? 'active' : 'inactive'}`}
+          onClick={handleClick}
+          type="button"
+          data-testid={`item-${value}`}
+      >
+        {value}
+      </button>
   )
 };
 
