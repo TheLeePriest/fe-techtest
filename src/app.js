@@ -1,6 +1,9 @@
-// source goes here
+import React from 'react';
+import ReactDOM from 'react-dom';
+import NumberGrid from './components/NumberGrid/NumberGrid';
+
 const app = function() {
-  console.log('hello from app!');
+  ReactDOM.render(<NumberGrid />, document.getElementById('root'))
 };
 
 export default app;

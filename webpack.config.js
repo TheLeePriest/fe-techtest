@@ -5,7 +5,19 @@ module.exports = {
     app: ['./src/index.js']
   },
   module: {
-    rules: [{
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            ignore: ['node_modules'],
+            presets: ['@babel/preset-react']
+          },
+        },
+      },
+      {
       test: /\.css$/,
       use: [
         'style-loader',
