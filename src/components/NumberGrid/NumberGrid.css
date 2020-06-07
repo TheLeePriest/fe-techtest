@@ -1,4 +1,16 @@
 .number-grid {
     display: flex;
     flex-wrap: wrap;
+    width: 100vw;
+    max-width: 1000px;
+    padding: 1vw;
+    justify-content: space-between;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .number-grid {
+        width: 95vw;
+    }
 }
