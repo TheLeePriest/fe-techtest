@@ -67,3 +67,9 @@ __Criteria for assessment__: Important things that will be assessed are:
 
 The test won’t be assessed on design at all, so don’t worry how it looks.
 
+## Libraries Used & Rationale
+
+### React
+I decided to use React to render the UI and handle some of the app logic. 
+
+The main reasons I used React were for the state management and the selective re-rendering of elements. As there were over 140 components that were being rendered using React allowed me to easily handle only re-painting those elements that needed it.
